@@ -12,9 +12,9 @@ Explore dungeons, fight monsters, and find the legendary black onyx.
 
 ## Requirements
 
-- Python 3.7 leter.
-- Pyxel 1.4.3 leter.
-- Overrides 3.1.0 leter.
+- Python 3.9 later. develop envirounment 3.12.
+- Pyxel 2.0.0 later. develop envirounment 2.0.13
+- Overrides 3.1.0 later. develop envirounment 7.7.0
 
 ## Story
 
