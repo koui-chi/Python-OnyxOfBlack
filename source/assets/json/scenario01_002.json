@@ -39,7 +39,7 @@
         "command":"printMessage",
         "args":{
             "message":[
-                ["M", ["ka", "nn", "mu", "ri", " ", "ha", " ", "mi", "tu", "ka", "ltu", "ta", "ka", "* ?"], "pyxel.COLOR_LIGHTBLUE"]
+                ["M", ["ka", "nn", "mu", "ri", " ", "ha", " ", "mi", "tu", "ka", "ltu", "ta", "ka", "* ?"], "pyxel.COLOR_LIGHT_BLUE"]
             ],
             "next":"end"
         }
@@ -54,7 +54,7 @@
                 ["M", [""]],
                 ["M", [""]],
                 ["M", [""]],
-                ["M", ["a", "ri", "ka", "d", "to", "u", " ", "o", "re", "i", "ni", " ", "ko", "re", " ", "ya", "ru", "."], "pyxel.COLOR_LIGHTBLUE"],
+                ["M", ["a", "ri", "ka", "d", "to", "u", " ", "o", "re", "i", "ni", " ", "ko", "re", " ", "ya", "ru", "."], "pyxel.COLOR_LIGHT_BLUE"],
                 ["M", [""]],
                 ["M", ["ko", "ho", "d", "ru", "to", "d", "NO", "KO", "TO", "D", "MO", "HA", " ", "SO", "U", "I", "U", "TO"]],
                 ["M", ["A", "KA", "I", " ", "HO", "U", "SE", "KI", "WO", " ", "KI", "MI", "TA", "TI", "NI", " ", "WA", "TA", "SI"]],
@@ -106,9 +106,9 @@
             "message":[
                 ["M", ["ko", "ho", "d", "ru", "to", "d", "NO", " ", "KO", "TO", "D", "MO", "HA", " ", "I", "LTU", "TA", "."]],
                 ["M", [""]],
-                ["M", ["ti", "ti", "no", " ", "o", "u", "ka", "nn", "wo", " ", "ko", "ltu", "so", "ri", " ", "mo", "ti", "ta", "d", "si", "te"], "pyxel.COLOR_LIGHTBLUE"],
-                ["M", ["a", "so", "nn", "te", "d", "i", "ta", "ra", " ", "si", "ta", "ni", " ", "o", "to", "si", "te", " ", "si", "ma", "ltu", "ta"], "pyxel.COLOR_LIGHTBLUE"],
-                ["M", ["sa", "ka", "d", "si", "te", "ki", "te", " ", "ku", "re", "."], "pyxel.COLOR_LIGHTBLUE"]
+                ["M", ["ti", "ti", "no", " ", "o", "u", "ka", "nn", "wo", " ", "ko", "ltu", "so", "ri", " ", "mo", "ti", "ta", "d", "si", "te"], "pyxel.COLOR_LIGHT_BLUE"],
+                ["M", ["a", "so", "nn", "te", "d", "i", "ta", "ra", " ", "si", "ta", "ni", " ", "o", "to", "si", "te", " ", "si", "ma", "ltu", "ta"], "pyxel.COLOR_LIGHT_BLUE"],
+                ["M", ["sa", "ka", "d", "si", "te", "ki", "te", " ", "ku", "re", "."], "pyxel.COLOR_LIGHT_BLUE"]
             ],
             "next":"section4_3"
         }

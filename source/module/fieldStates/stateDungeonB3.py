@@ -45,7 +45,7 @@ class StateDungeonB3(BaseFieldState):
         super().onEnter()
 
         # 壁の色を初期化する
-        self.set_wall_color(pyxel.COLOR_LIGHTBLUE, pyxel.COLOR_DARKBLUE)
+        self.set_wall_color(pyxel.COLOR_LIGHT_BLUE, pyxel.COLOR_DARK_BLUE)
 
     @overrides
     def onExit(self):

@@ -67,7 +67,7 @@ class Input():
             pyxel.KEY_X: {"func" : self.add, "args": {"keystr": "X"}},
             pyxel.KEY_Y: {"func" : self.add, "args": {"keystr": "Y"}},
             pyxel.KEY_Z: {"func" : self.add, "args": {"keystr": "Z"}},
-            pyxel.KEY_ENTER: {"func" : self.enter, "args": None},
+            pyxel.KEY_SPACE: {"func" : self.enter, "args": None},
             pyxel.KEY_BACKSPACE: {"func" : self.backspace, "args": None},
             pyxel.KEY_DELETE: {"func" : self.backspace, "args": None},
         }

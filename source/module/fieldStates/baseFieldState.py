@@ -44,19 +44,19 @@ class BaseFieldState(BaseState, EnforceOverrides):
     # 迷路描画の壁の色（正面）
     WALLCOLOR_FRONT = [
         None,
-        pyxel.COLOR_LIGHTBLUE,
+        pyxel.COLOR_LIGHT_BLUE,
         pyxel.COLOR_YELLOW,
         pyxel.COLOR_BLACK,
-        pyxel.COLOR_LIGHTBLUE,
+        pyxel.COLOR_LIGHT_BLUE,
     ]
 
     # 迷路描画の壁の色（側面）
     WALLCOLOR_SIDE = [
         None,
-        pyxel.COLOR_DARKBLUE,
+        pyxel.COLOR_DARK_BLUE,
         pyxel.COLOR_YELLOW,
         pyxel.COLOR_BLACK,
-        pyxel.COLOR_DARKBLUE,
+        pyxel.COLOR_DARK_BLUE,
     ]
 
     # 移動後判定フラグ
@@ -77,7 +77,7 @@ class BaseFieldState(BaseState, EnforceOverrides):
         '''
         super().__init__(**kwargs)
 
-    def set_wall_color(self, wallcolor_front=pyxel.COLOR_LIGHTBLUE, wallcolor_side=pyxel.COLOR_DARKBLUE, doorcolor=pyxel.COLOR_YELLOW):
+    def set_wall_color(self, wallcolor_front=pyxel.COLOR_LIGHT_BLUE, wallcolor_side=pyxel.COLOR_DARK_BLUE, doorcolor=pyxel.COLOR_YELLOW):
         '''
         壁の色を設定する。\n
         途中で変更したい場合に使用する。\n
@@ -249,29 +249,29 @@ class BaseFieldState(BaseState, EnforceOverrides):
 
         # 迷路の枠線
         pyxel.rectb(self.DRAW_OFFSET_X - 1, self.DRAW_OFFSET_Y -
-                    1, 81, 81, pyxel.COLOR_DARKBLUE)
+                    1, 81, 81, pyxel.COLOR_DARK_BLUE)
 
         # 地面部のグリッド
         if self.isSky():
             pyxel.rect(self.DRAW_OFFSET_X, self.DRAW_OFFSET_Y,
-                       79, 79, pyxel.COLOR_DARKBLUE)
+                       79, 79, pyxel.COLOR_DARK_BLUE)
             # 満天の星空
             pyxel.blt(self.DRAW_OFFSET_X, self.DRAW_OFFSET_Y + 47,
                       0, playerParty.direction * 32, 40, 79, -32, 0)
         else:
             pyxel.line(0 + self.DRAW_OFFSET_X, 40 + self.DRAW_OFFSET_Y, 78 +
-                       self.DRAW_OFFSET_X, 40 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                       self.DRAW_OFFSET_X, 40 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
             pyxel.line(0 + self.DRAW_OFFSET_X, 43 + self.DRAW_OFFSET_Y, 78 +
-                       self.DRAW_OFFSET_X, 43 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                       self.DRAW_OFFSET_X, 43 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
             pyxel.line(0 + self.DRAW_OFFSET_X, 50 + self.DRAW_OFFSET_Y, 78 +
-                       self.DRAW_OFFSET_X, 50 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                       self.DRAW_OFFSET_X, 50 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
             pyxel.line(0 + self.DRAW_OFFSET_X, 69 + self.DRAW_OFFSET_Y, 78 +
-                       self.DRAW_OFFSET_X, 69 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                       self.DRAW_OFFSET_X, 69 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
 
             pyxel.line(39 + self.DRAW_OFFSET_X, 39 + self.DRAW_OFFSET_Y, 0 +
-                       self.DRAW_OFFSET_X, 78 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                       self.DRAW_OFFSET_X, 78 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
             pyxel.line(39 + self.DRAW_OFFSET_X, 39 + self.DRAW_OFFSET_Y, 78 +
-                       self.DRAW_OFFSET_X, 78 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                       self.DRAW_OFFSET_X, 78 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
 
         if self.tick > 0:
             if self.isOuter():
@@ -281,18 +281,18 @@ class BaseFieldState(BaseState, EnforceOverrides):
             else:
                 # 天井部のグリッド
                 pyxel.line(0 + self.DRAW_OFFSET_X, 38 + self.DRAW_OFFSET_Y, 78 +
-                           self.DRAW_OFFSET_X, 38 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                           self.DRAW_OFFSET_X, 38 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
                 pyxel.line(0 + self.DRAW_OFFSET_X, 35 + self.DRAW_OFFSET_Y, 78 +
-                           self.DRAW_OFFSET_X, 35 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                           self.DRAW_OFFSET_X, 35 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
                 pyxel.line(0 + self.DRAW_OFFSET_X, 28 + self.DRAW_OFFSET_Y, 78 +
-                           self.DRAW_OFFSET_X, 28 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                           self.DRAW_OFFSET_X, 28 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
                 pyxel.line(0 + self.DRAW_OFFSET_X, 9 + self.DRAW_OFFSET_Y, 78 +
-                           self.DRAW_OFFSET_X, 9 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                           self.DRAW_OFFSET_X, 9 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
 
                 pyxel.line(39 + self.DRAW_OFFSET_X, 39 + self.DRAW_OFFSET_Y, 0 +
-                           self.DRAW_OFFSET_X, 0 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                           self.DRAW_OFFSET_X, 0 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
                 pyxel.line(39 + self.DRAW_OFFSET_X, 39 + self.DRAW_OFFSET_Y, 78 +
-                           self.DRAW_OFFSET_X, 0 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARKBLUE)
+                           self.DRAW_OFFSET_X, 0 + self.DRAW_OFFSET_Y, pyxel.COLOR_DARK_BLUE)
 
             # 迷路
             self.draw_maze(playerParty.x, playerParty.y,

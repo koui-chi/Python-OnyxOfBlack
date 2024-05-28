@@ -30,11 +30,11 @@ class StateTitle(BaseSystemState):
 
     # テキストのフェードイン／アウトの色
     TEXTCOLOR = [pyxel.COLOR_BLACK] * 5
-    TEXTCOLOR += [pyxel.COLOR_DARKBLUE] * 5
-    TEXTCOLOR += [pyxel.COLOR_LIGHTBLUE] * 5
+    TEXTCOLOR += [pyxel.COLOR_DARK_BLUE] * 5
+    TEXTCOLOR += [pyxel.COLOR_LIGHT_BLUE] * 5
     TEXTCOLOR += [pyxel.COLOR_WHITE] * 30
-    TEXTCOLOR += [pyxel.COLOR_LIGHTBLUE] * 5
-    TEXTCOLOR += [pyxel.COLOR_DARKBLUE] * 5
+    TEXTCOLOR += [pyxel.COLOR_LIGHT_BLUE] * 5
+    TEXTCOLOR += [pyxel.COLOR_DARK_BLUE] * 5
     TEXTCOLOR += [pyxel.COLOR_BLACK] * 10
 
     # ストーリー
@@ -76,9 +76,9 @@ class StateTitle(BaseSystemState):
 
     # 星の色
     STAR_COLOR = (
-        pyxel.COLOR_LIGHTBLUE,
+        pyxel.COLOR_LIGHT_BLUE,
         pyxel.COLOR_YELLOW,
-        pyxel.COLOR_DARKBLUE,
+        pyxel.COLOR_DARK_BLUE,
     )
 
     # 星の座標リスト
@@ -91,9 +91,9 @@ class StateTitle(BaseSystemState):
     # タイトルロゴの色パターン
     # 各要素は赤系、緑系、青系の順で定義している
     TITLE_COLOR = (
-        (pyxel.COLOR_NAVY, pyxel.COLOR_DARKBLUE, pyxel.COLOR_ORANGE, pyxel.COLOR_YELLOW, pyxel.COLOR_YELLOW),
-        (pyxel.COLOR_NAVY, pyxel.COLOR_DARKBLUE, pyxel.COLOR_GREEN, pyxel.COLOR_LIME, pyxel.COLOR_WHITE),
-        (pyxel.COLOR_NAVY, pyxel.COLOR_DARKBLUE, pyxel.COLOR_CYAN, pyxel.COLOR_LIGHTBLUE, pyxel.COLOR_WHITE),
+        (pyxel.COLOR_NAVY, pyxel.COLOR_DARK_BLUE, pyxel.COLOR_ORANGE, pyxel.COLOR_YELLOW, pyxel.COLOR_YELLOW),
+        (pyxel.COLOR_NAVY, pyxel.COLOR_DARK_BLUE, pyxel.COLOR_GREEN, pyxel.COLOR_LIME, pyxel.COLOR_WHITE),
+        (pyxel.COLOR_NAVY, pyxel.COLOR_DARK_BLUE, pyxel.COLOR_CYAN, pyxel.COLOR_LIGHT_BLUE, pyxel.COLOR_WHITE),
     )
 
     # タイトルロゴのフェードイン処理用
@@ -212,53 +212,54 @@ class StateTitle(BaseSystemState):
         '''
         タイトルロゴフェードイン
         '''
-        if pyxel.frame_count % 2 == 0:
-            # タイトルロゴのピクセルを走査し、バッファに描き込む
-            for _y in range(self.TITLE_Y + self.title_get_y, self.TITLE_H + 1, 2):
-                for _x in range(self.TITLE_X + self.title_get_x, self.TITLE_W + 7, 8):
-                    # イメージバンク0の指定した座標のピクセルの色を取得する
-                    _pick_color = pyxel.image(0).get(_x, _y)
-                    # 取得した色が現在のからーグループ以降に含まれているかを調べる
-                    # 青系
-                    if self.TITLE_COLOR[2][self.title_color_idx:].count(_pick_color):
-                        pyxel.image(0).set(self.TITLE_BUFF_OFFSET_X + _x, self.TITLE_BUFF_OFFSET_Y + _y, self.TITLE_COLOR[2][self.title_color_idx])
-                    # 緑系
-                    elif self.TITLE_COLOR[1][self.title_color_idx:].count(_pick_color):
-                        pyxel.image(0).set(self.TITLE_BUFF_OFFSET_X + _x, self.TITLE_BUFF_OFFSET_Y + _y, self.TITLE_COLOR[1][self.title_color_idx])
-                    # 赤系
-                    elif self.TITLE_COLOR[0][self.title_color_idx:].count(_pick_color):
-                        pyxel.image(0).set(self.TITLE_BUFF_OFFSET_X + _x, self.TITLE_BUFF_OFFSET_Y + _y, self.TITLE_COLOR[0][self.title_color_idx])
-                    
-            # 横1ドット移動
-            self.title_get_x += 2
-
-            # 8ドット分処理したか
-            if self.title_get_x > 8:
-                # 8ドット分処理したら、次の処理に向けて準備する
-                self.title_get_loop_cnt += 1
-                # ループカウント1の場合：x+1ドット、y+1ドット目から処理する
-                if self.title_get_loop_cnt == 1:
-                    self.title_get_x = 1
-                    self.title_get_y = 1
-                # ループカウント2の場合：x+1ドット、y+0ドット目から処理する
-                if self.title_get_loop_cnt == 2:
-                    self.title_get_x = 1
-                    self.title_get_y = 0
-                # ループカウント3の場合：x+0ドット、y+1ドット目から処理する
-                if self.title_get_loop_cnt == 3:
-                    self.title_get_x = 0
-                    self.title_get_y = 1
-                # ループカウント4の場合：ループカウントをリセット、次のカラーグループでx+0ドット、y+0ドット目から処理する
-                if self.title_get_loop_cnt == 4:
-                    self.title_get_loop_cnt = 0
-                    self.title_get_x = 0
-                    self.title_get_y = 0
-                    self.title_color_idx += 1
-                    if self.title_color_idx >= len(self.TITLE_COLOR[0]):
-                        self.state = self.STATE_TITLE
-
-        if pyxel.btnp(pyxel.KEY_SPACE):
-            self.state = self.STATE_TITLE
+#        if pyxel.frame_count % 2 == 0:
+#            # タイトルロゴのピクセルを走査し、バッファに描き込む
+#            for _y in range(self.TITLE_Y + self.title_get_y, self.TITLE_H + 1, 2):
+#                for _x in range(self.TITLE_X + self.title_get_x, self.TITLE_W + 7, 8):
+#                    # イメージバンク0の指定した座標のピクセルの色を取得する
+#                    _pick_color = pyxel.image(0).get(_x, _y)
+#                    # 取得した色が現在のからーグループ以降に含まれているかを調べる
+#                    # 青系
+#                    if self.TITLE_COLOR[2][self.title_color_idx:].count(_pick_color):
+#                        pyxel.image(0).set(self.TITLE_BUFF_OFFSET_X + _x, self.TITLE_BUFF_OFFSET_Y + _y, self.TITLE_COLOR[2][self.title_color_idx])
+#                    # 緑系
+#                    elif self.TITLE_COLOR[1][self.title_color_idx:].count(_pick_color):
+#                        pyxel.image(0).set(self.TITLE_BUFF_OFFSET_X + _x, self.TITLE_BUFF_OFFSET_Y + _y, self.TITLE_COLOR[1][self.title_color_idx])
+#                    # 赤系
+#                    elif self.TITLE_COLOR[0][self.title_color_idx:].count(_pick_color):
+#                        pyxel.image(0).set(self.TITLE_BUFF_OFFSET_X + _x, self.TITLE_BUFF_OFFSET_Y + _y, self.TITLE_COLOR[0][self.title_color_idx])
+#                    
+#            # 横1ドット移動
+#            self.title_get_x += 2
+#
+#            # 8ドット分処理したか
+#            if self.title_get_x > 8:
+#                # 8ドット分処理したら、次の処理に向けて準備する
+#                self.title_get_loop_cnt += 1
+#                # ループカウント1の場合：x+1ドット、y+1ドット目から処理する
+#                if self.title_get_loop_cnt == 1:
+#                    self.title_get_x = 1
+#                    self.title_get_y = 1
+#                # ループカウント2の場合：x+1ドット、y+0ドット目から処理する
+#                if self.title_get_loop_cnt == 2:
+#                    self.title_get_x = 1
+#                    self.title_get_y = 0
+#                # ループカウント3の場合：x+0ドット、y+1ドット目から処理する
+#                if self.title_get_loop_cnt == 3:
+#                    self.title_get_x = 0
+#                    self.title_get_y = 1
+#                # ループカウント4の場合：ループカウントをリセット、次のカラーグループでx+0ドット、y+0ドット目から処理する
+#                if self.title_get_loop_cnt == 4:
+#                    self.title_get_loop_cnt = 0
+#                    self.title_get_x = 0
+#                    self.title_get_y = 0
+#                    self.title_color_idx += 1
+#                    if self.title_color_idx >= len(self.TITLE_COLOR[0]):
+#                        self.state = self.STATE_TITLE
+#
+#        if pyxel.btnp(pyxel.KEY_SPACE):
+#            self.state = self.STATE_TITLE
+        self.state = self.STATE_TITLE
 
 
     def update_generatestar(self):

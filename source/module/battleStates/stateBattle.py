@@ -684,7 +684,7 @@ class StateBattle(BaseState):
                 # 体力
                 _life_x = _member.life if _member.life <= 100 else 100
                 pyxel.rect(136, (_idx + 1) * 16 + 6,
-                           _life_x, 3,  pyxel.COLOR_DARKBLUE)
+                           _life_x, 3,  pyxel.COLOR_DARK_BLUE)
 
         _handler = self.handler.get(self.state, None)
         if _handler != None:
@@ -734,7 +734,7 @@ class StateBattle(BaseState):
             PyxelUtil.text(24, 148 + _idx * 8,
                            "*[{:1}]".format(_idx + 1), pyxel.COLOR_YELLOW)
             PyxelUtil.text(40, 148 + _idx * 8, "*" +
-                           enemyParty.memberList[_idx].name, pyxel.COLOR_LIGHTBLUE)
+                           enemyParty.memberList[_idx].name, pyxel.COLOR_LIGHT_BLUE)
 
     def draw_start_battle(self):
         '''
@@ -845,7 +845,7 @@ class StateBattle(BaseState):
         会話失敗（コボルド）処理
         '''
         PyxelUtil.text(16, 148, ["u", "ma", "so", "u", "na", " ", "ni",
-                                 "nn", "ke", "d", "nn", "ta", "d", "* !"], pyxel.COLOR_LIGHTBLUE)
+                                 "nn", "ke", "d", "nn", "ta", "d", "* !"], pyxel.COLOR_LIGHT_BLUE)
         PyxelUtil.text(180, 180, "*[HIT SPACE KEY]", pyxel.COLOR_YELLOW)
 
 

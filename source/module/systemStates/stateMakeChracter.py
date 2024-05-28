@@ -127,7 +127,7 @@ class StateMakeCharacter(BaseSystemState):
 #        if pyxel.btnp(pyxel.KEY_DOWN) and self.hair_num // 8 < 3:
 #            self.hair_num += 8
 
-        if pyxel.btnp(pyxel.KEY_ENTER):
+        if pyxel.btnp(pyxel.KEY_SPACE):
             pyxel.play(3, 0, loop=False)
 
             # 頭部設定
@@ -149,7 +149,7 @@ class StateMakeCharacter(BaseSystemState):
         if pyxel.btnp(pyxel.KEY_RIGHT) and self.crothes_num % 8 < 7:
             self.crothes_num += 1
 
-        if pyxel.btnp(pyxel.KEY_ENTER):
+        if pyxel.btnp(pyxel.KEY_SPACE):
             pyxel.play(3, 0, loop=False)
 
             # 体設定

@@ -16,7 +16,7 @@ class App:
         クラス初期化
         '''
         # Pyxel初期化～実行
-        pyxel.init(256, 192, fullscreen=True, quit_key=pyxel.KEY_NONE)
+        pyxel.init(256, 192, quit_key=pyxel.KEY_NONE)
         pyxel.load("assets/onyxofblack.pyxres")
 
         # 初期stateをpush

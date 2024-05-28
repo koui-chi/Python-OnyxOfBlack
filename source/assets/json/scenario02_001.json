@@ -35,14 +35,14 @@
                 ["M", [""]],
                 ["M", [""]],
                 ["M", [""]],
-                ["M", ["WA", "TA", "SI", "HA", " ", "*ORSER ", "MA", "HO", "U", "TU", "KA", "I", " ", "SI", "D", "LYA", "."], "pyxel.COLOR_LIGHTBLUE"],
-                ["M", ["A", "TA", "RA", "SI", "I", " ", "ka", "ki", "d", "NO", "MA", "HO", "U", "WO", " ", "TA", "ME", "SI", "TE", "I", "TA", "NO", "SI", "D", "LYA", "KA", "D"], "pyxel.COLOR_LIGHTBLUE"],
-                ["M", ["MA", "TI", "KA", "D", "E", "TE", " ", "wa", "si", "KA", "D", "TE", "D", "RA", "RE", "NA", "KU", "NA", "LTU", "TE", "SI", "MA", "LTU", "TA", "NO", "SI", "D", "LYA" ], "pyxel.COLOR_LIGHTBLUE"],
+                ["M", ["WA", "TA", "SI", "HA", " ", "*ORSER ", "MA", "HO", "U", "TU", "KA", "I", " ", "SI", "D", "LYA", "."], "pyxel.COLOR_LIGHT_BLUE"],
+                ["M", ["A", "TA", "RA", "SI", "I", " ", "ka", "ki", "d", "NO", "MA", "HO", "U", "WO", " ", "TA", "ME", "SI", "TE", "I", "TA", "NO", "SI", "D", "LYA", "KA", "D"], "pyxel.COLOR_LIGHT_BLUE"],
+                ["M", ["MA", "TI", "KA", "D", "E", "TE", " ", "wa", "si", "KA", "D", "TE", "D", "RA", "RE", "NA", "KU", "NA", "LTU", "TE", "SI", "MA", "LTU", "TA", "NO", "SI", "D", "LYA" ], "pyxel.COLOR_LIGHT_BLUE"],
                 ["M", [""]],
                 ["M", [""]],
-                ["M", ["KO", "NO", " ", "MA", "HO", "U", "NO", "ka", "ki", "d", "NO", " ", "A", "KE", "KA", "TA", "HA"], "pyxel.COLOR_LIGHTBLUE"],
-                ["M", ["TE", "D", "SI", "NO", " ", "*ARCANE", " ", "KA", "D", " ", "SI", "LTU", "TE", "I", "RU", "."], "pyxel.COLOR_LIGHTBLUE"],
-                ["M", ["ka", "re", "WO", " ", "SA", "KA", "D", "SI", "TE", "KI", "TE", " ", "KU", "RE", "NN", "SI", "D", "LYA", "RO", "U", "KA", "."], "pyxel.COLOR_LIGHTBLUE"]
+                ["M", ["KO", "NO", " ", "MA", "HO", "U", "NO", "ka", "ki", "d", "NO", " ", "A", "KE", "KA", "TA", "HA"], "pyxel.COLOR_LIGHT_BLUE"],
+                ["M", ["TE", "D", "SI", "NO", " ", "*ARCANE", " ", "KA", "D", " ", "SI", "LTU", "TE", "I", "RU", "."], "pyxel.COLOR_LIGHT_BLUE"],
+                ["M", ["ka", "re", "WO", " ", "SA", "KA", "D", "SI", "TE", "KI", "TE", " ", "KU", "RE", "NN", "SI", "D", "LYA", "RO", "U", "KA", "."], "pyxel.COLOR_LIGHT_BLUE"]
             ],
             "next":"section2_2"
         }
@@ -61,9 +61,9 @@
         "command":"printMessage",
         "args":{
             "message":[
-                ["M", ["NA", "NI", "WO", "SI", "TE", "O", "RU", " ", "HA", "YA", "KU", " ", "*ARCANE", "WO", " ", "TU", "RE", "TE", "KI", "TE", "KU", "RE", "."], "pyxel.COLOR_LIGHTBLUE"],
-                ["M", ["a", "i", "tu", "HA", " ", "YO", "KU", " ", "HO", "D", "TI", "NI", " ", "I", "LTU", "TE", "O", "RU", ","], "pyxel.COLOR_LIGHTBLUE"],
-                ["M", ["KI", "LTU", "TO", " ", "SO", "KO", "NI", " ", "I", "RU", "HA", "SU", "D", "SI", "D", "LYA", "."], "pyxel.COLOR_LIGHTBLUE"]
+                ["M", ["NA", "NI", "WO", "SI", "TE", "O", "RU", " ", "HA", "YA", "KU", " ", "*ARCANE", "WO", " ", "TU", "RE", "TE", "KI", "TE", "KU", "RE", "."], "pyxel.COLOR_LIGHT_BLUE"],
+                ["M", ["a", "i", "tu", "HA", " ", "YO", "KU", " ", "HO", "D", "TI", "NI", " ", "I", "LTU", "TE", "O", "RU", ","], "pyxel.COLOR_LIGHT_BLUE"],
+                ["M", ["KI", "LTU", "TO", " ", "SO", "KO", "NI", " ", "I", "RU", "HA", "SU", "D", "SI", "D", "LYA", "."], "pyxel.COLOR_LIGHT_BLUE"]
             ],
             "next":"end"
         }
@@ -78,10 +78,10 @@
                 ["M", ["SO", "U", "I", "U", "TO", " ", "*ARCANE ", "HA", " ", "SI", "D", "LYU", "MO", "NN", "WO", " ", "TO", "NA", "E", "TA", "."]],
                 ["M", ["A", "TA", "RI", "KA", "D", " ", "NI", "HU", "D", "I", "hi", "ka", "ri", "NI", " ", "TU", "TU", "MA", "RE", "TA", "."]],
                 ["M", [""]],
-                ["M", ["O", "O", ",", "KO", "RE", "TE", "D", " ", "YA", "LTU", "TO", " ", "KO", "KO", "KA", "RA", " ", "TE", "D", "RA", "RE", "RU", "* !"], "pyxel.COLOR_LIGHTBLUE"],
-                ["M", ["A", "RI", "KA", "D", "TO", "U", " ", "TA", "SU", "KA", "LTU", "TA", "."], "pyxel.COLOR_LIGHTBLUE"],
+                ["M", ["O", "O", ",", "KO", "RE", "TE", "D", " ", "YA", "LTU", "TO", " ", "KO", "KO", "KA", "RA", " ", "TE", "D", "RA", "RE", "RU", "* !"], "pyxel.COLOR_LIGHT_BLUE"],
+                ["M", ["A", "RI", "KA", "D", "TO", "U", " ", "TA", "SU", "KA", "LTU", "TA", "."], "pyxel.COLOR_LIGHT_BLUE"],
                 ["M", [""]],
-                ["M", ["SO", "U", "TA", "D", ",", "O", "RE", "I", "NI", " ", "KO", "RE", "WO", "YA", "RO", "U", "."], "pyxel.COLOR_LIGHTBLUE"],
+                ["M", ["SO", "U", "TA", "D", ",", "O", "RE", "I", "NI", " ", "KO", "RE", "WO", "YA", "RO", "U", "."], "pyxel.COLOR_LIGHT_BLUE"],
                 ["M", [""]],
                 ["M", ["a", "me", "si", "d", "su", "to", "NO", " ", "YU", "HI", "D", "WA", "WO", " ", "TE", "NI", "I", "RE", "TA", "* !"], "pyxel.COLOR_RED"]
             ],

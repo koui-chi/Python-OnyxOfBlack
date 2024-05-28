@@ -68,9 +68,9 @@ class BaseState(EnforceOverrides):
         pyxel.cls(pyxel.COLOR_BLACK)
 
         # 枠線
-        pyxel.rectb(8, 8, 240, 126, pyxel.COLOR_DARKBLUE)
-        pyxel.line(128, 8, 128, 132, pyxel.COLOR_DARKBLUE)
-        pyxel.line(8, 96, 247, 96, pyxel.COLOR_DARKBLUE)
+        pyxel.rectb(8, 8, 240, 126, pyxel.COLOR_DARK_BLUE)
+        pyxel.line(128, 8, 128, 132, pyxel.COLOR_DARK_BLUE)
+        pyxel.line(8, 96, 247, 96, pyxel.COLOR_DARK_BLUE)
 
         # プレイヤーキャラクタの描画位置
         _x = [16, 36, 60, 84, 104]
@@ -91,12 +91,12 @@ class BaseState(EnforceOverrides):
             # 体力
             _life_x = _member.life if _member.life <= 100 else 100
             pyxel.rect(16, (_idx + 1) * 16 + 6, _life_x,
-                       3,  pyxel.COLOR_DARKBLUE)
+                       3,  pyxel.COLOR_DARK_BLUE)
             # 経験値
             _exp_x = _member.exp // 2 if _member.exp <= 200 else 100
             pyxel.rect(16, (_idx + 1) * 16 + 9, 100, 1,  pyxel.COLOR_NAVY)
             pyxel.rect(16, (_idx + 1) * 16 + 9, _exp_x,
-                       1,  pyxel.COLOR_LIGHTBLUE)
+                       1,  pyxel.COLOR_LIGHT_BLUE)
 
     def onEnter(self):
         '''

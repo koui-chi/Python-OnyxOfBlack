@@ -235,7 +235,7 @@ class StateCamp(BaseFacilityState):
         '''
         メニューの描画処理
         '''
-        PyxelUtil.text(97, 140, ["*** CAMP MENU **"], pyxel.COLOR_LIGHTBLUE)
+        PyxelUtil.text(97, 140, ["*** CAMP MENU **"], pyxel.COLOR_LIGHT_BLUE)
         PyxelUtil.text(16, 148, ["*[D] ", "KU", "SU", "RI",
                                  "WO", " ", "NO", "MU"], pyxel.COLOR_YELLOW)
         PyxelUtil.text(16, 156, ["*[S] ", "se", "-",
