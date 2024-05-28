@@ -11,9 +11,9 @@ Pythonで作られたレトロスタイルのロールプレイングゲーム�
 
 ## 要件
 
-- Python 3.7 以降
-- Pyxel 1.4.3 以降
-- Overrides 3.1.0 以降
+- Python 3.9 以降 (develop envirounment 3.12)
+- Pyxel 2.0 以降 (develop envirounment 2.0.13)
+- Overrides 3.1.0 以降 (develop envirounment 7.7.0)
 
 ## ストーリー
 
