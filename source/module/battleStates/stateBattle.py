@@ -695,6 +695,7 @@ class StateBattle(BaseState):
         遭遇時の表示処理
         ※未使用メソッド
         '''
+        print("call draw encount:nanikatikaduitekita")
         PyxelUtil.text(56, 148, ["NA", "NI", "KA", " ", "TI", "KA",
                                  "TU", "D", "I", "TE", "KI", "TA", "* !"], pyxel.COLOR_RED)
 

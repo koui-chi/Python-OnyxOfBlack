@@ -43,6 +43,8 @@ class StateDungeonB5(BaseFieldState):
         '''
         # エンカウントフラグをONにする
         self.isEncount = True
+        # isFixedEncountがTrue -> イベント辞書から削除する。
+        self.isFixedEncount = True
 
         # 敵パーティー生成
         enemyParty.memberList = EnemyPartyGenerator.generate(monsterParams["KRAKEN_LV1"])
