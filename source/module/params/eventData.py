@@ -82,21 +82,21 @@ class eventData(object):
             "CEMETERY23239U": "self.startEvent('scenario02_002.json')",
             "CEMETERY34299U": "self.startEvent('scenario02_003.json')",
 
-            "WELLB115149U": "self.startEvent('wellb1_001.json')",
-            "WELLB117179U": "self.update_fixed_encount_enemy()",
-            "WELLB119169U": "self.update_fixed_encount_enemy()",
-            "WELLB120139U": "self.update_fixed_encount_enemy()",
-            "WELLB122099U": "self.update_fixed_encount_enemy()",
-            "WELLB123139U": "self.update_fixed_encount_enemy()",
-            "WELLB124119U": "self.update_fixed_encount_enemy()",
-            "WELLB120199U": "self.startEvent('scenario01_002.json')",
+            "DUNGEONB115149U": "self.startEvent('wellb1_001.json')",
+            "DUNGEONB117179U": "self.update_fixed_encount_enemy()",
+            "DUNGEONB119169U": "self.update_fixed_encount_enemy()",
+            "DUNGEONB120139U": "self.update_fixed_encount_enemy()",
+            "DUNGEONB122099U": "self.update_fixed_encount_enemy()",
+            "DUNGEONB123139U": "self.update_fixed_encount_enemy()",
+            "DUNGEONB124119U": "self.update_fixed_encount_enemy()",
+            "DUNGEONB120199U": "self.startEvent('scenario01_002.json')",
 
-            "WELLB215149U": "self.startEvent('wellb2_001.json')",
-            "WELLB216149U": "self.startEvent('scenario01_003.json')",
+            "DUNGEONB215149U": "self.startEvent('wellb2_001.json')",
+            "DUNGEONB216149U": "self.startEvent('scenario01_003.json')",
 
-            "WELLB315149U": "self.startEvent('wellb3_001.json')",
+            "DUNGEONB315149U": "self.startEvent('wellb3_001.json')",
 
-            "WELLB415149U": "self.startEvent('wellb4_001.json')",
+            "DUNGEONB415149U": "self.startEvent('wellb4_001.json')",
 
             "DUNGEONB103069U": "self.startEvent('dungeonb1_001.json')",
             "DUNGEONB118219U": "self.startEvent('dungeonb1_002.json')",

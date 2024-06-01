@@ -23,7 +23,7 @@
     "section2_1":{
         "command":"pushState",
         "args":{
-            "stateName":"WELLB1",
+            "stateName":"DUNGEONB1",
             "next":"end"
         }
     },
